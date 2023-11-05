@@ -173,8 +173,8 @@ nav ul li a:hover::after {
     width: 500px;/* Adjust the width as needed */
     height: 0px;
     position: absolute;
-    top: 80px;
-    left: 0;
+    top: 400px;
+    left: 100px;
     bottom: 0;
     background-color: #F9ECDA;
     animation: slideInFromLeft 1s ease forwards;
