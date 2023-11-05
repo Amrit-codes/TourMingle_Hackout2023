@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre&family=Glegoo&family=Philosopher&family=Roboto&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style_except.css">
+    <title>Login</title>
+    <link rel="icon" href="icons/FINAL.png">
+
+</head>
+<style>
+    header{
+        height: 3rem;
+        margin:0rem;
+        
+    }
+    
+    body{
+        /* background: rgb(255,196,83);
+        background: linear-gradient(0deg, rgba(255,196,83,1) 0%, rgba(255,255,255,1) 100%); */
+        /* background-image: url("./images/Desktop\ -\ 11.png");ś */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        background-image: url(desert1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .container{
+        height: 100vh;
+        width: 100vw;
+    }
+    .head{
+        float: left;
+        height: 8%;
+        /* border-bottom: 0.3rem solid #102C57; */
+       
+    }
+    .box{
+        float: left;
+    }
+    .image{
+        float: right;
+        height: fit-content;
+        width: 48%;
+        margin-right: 0rem;
+    }
+
+    #woman{
+        height: 40rem;
+        width: 28rem;
+        
+    }
+    .head{
+        
+        color: #102C57;
+        font-family: Poppins;
+        font-size: 2.5rem;
+        font-weight: bold;
+        letter-spacing: 0.3rem;
+        width: 23.2rem;
+        margin-left: 10.5%;
+        margin-top: 8%;
+        
+        
+    }
+    .box{
+    /* border: 0.3rem solid rgb(232, 193, 18); */
+    position: absolute;
+    width: 30rem;
+    height: 20rem;
+    margin-left: 30%;
+    margin-top: 13%;
+    padding: 2rem;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    animation: anim2 0.8s;
+    background: rgba(255, 255, 255, 0.5);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); */
+    border: solid #E09400 5px;
+    }
+
+    @keyframes anim2 {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+      
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+
+      .email{
+        font-size: 1rem;
+        text-transform: lowercase;
+      }
+
+   
+    .disc{
+        font-family: 'Philosopher',sans serif;
+        margin-top: 0.3rem;
+        font-size: 2.5rem;
+    }
+
+    .para{
+        font-family: Philosopher;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        line-height: 2rem;
+    }
+
+    button{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 500px;
+        font-size: 1rem;
+        height: 3rem;
+        width: 5rem;
+        margin: 2rem 6rem 2rem 6rem;
+        background-color: #E09400;
+        border: none;
+        font-weight: bold;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        transition: 0.5s
+
+
+    }
+    button:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        background-color: black;
+        color: #E09400;
+    }
+    .buttons{
+        font-family: 'Courier New', Courier, monospaces;
+        display: flex;
+        justify-content: space-between;
+
+    }
+</style>
+
+<body>
+    <div class="stripes">
+        <div class="line-one"></div>
+        <div class="line-two"></div>
+    </div>
+    <nav>
+        <div class="logo">
+            <span>LegalDraft</span>
+        </div>
+        <ul>
+            <li><a href="./index.html">Main</a></li>
+            <li><a href="./aboutpage.html">About Us</a></li>
+            <li><a href="./contactpage1.html">Contact us</a></li>
+            <li><a href="./login1.html">Chatbot</a></li>
+            <li><a href="./login1.html">Login</a></li>
+        </ul>
+        <div class="search">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="menu">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+
+        <div class="head">
+            <span></span>
+        </div>
+        <div class="box">
+            <div class="disc"><b>DISCLAIMER</b></div> 
+            <div class="para">
+                Our Tour Guide Chatbot offers information based on available data and user input. Verify details, follow local guidelines, and prioritize safety. Remember, the chatbot is an aid, not a replacement for professional guidance. Review our Terms of Service and Privacy Policy. Travel responsibly and enjoy your journey!
+            </div>
+            <div class="buttons">
+                <a href="./chatbot.html"><button> ACCEPT </button></a>
+                <a href="./index.html"><button> DECLINE </button></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        TweenMax.from(".line-one", 1, {
+            opacity: 0,
+            delay: .1,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".line-two", 1, {
+            opacity: 0,
+            delay: 0.5,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+        
+    </script>
+</body>
+</html>

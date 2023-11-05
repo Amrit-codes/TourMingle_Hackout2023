@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOURMINGLE</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" href="icons/FINAL.png">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <div class="logo">
+                <span>TourMingle</span>
+            </div>
+            <ul>
+                <li><a href="./index.html">Main</a></li>
+                <li><a href="./aboutpage.html">About Us</a></li>
+                <li><a href="./contactpage1.html">Contact us</a></li>
+                <li><a href="./login1.html">Chatbot</a></li>
+                <li><a href="./login1.html">Login</a></li>
+            </ul>
+            
+        </nav>
+        <iframe width="1490" height="770" src="https://console.dialogflow.com/api-client/demo/embedded/cc62a8ea-c53e-4fd9-be8f-33c917d877c0" title="Chatbot" class="animated-iframe" frameborder="0" ></iframe>
+    
+<style>
+    body{
+        background-image: url(gras.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-blend-mode: difference  ;
+    }
+
+    iframe.animated-iframe {
+  opacity: 0; /* Start with zero opacity */
+  position: absolute;
+  transition: opacity 1s; /* Add a smooth transition effect */
+}
+
+/* When the iframe is loaded and ready, change the opacity to 1 */
+iframe.animated-iframe.loaded {
+  opacity: 1;
+}
+
+    
+</style>
+
+    </div>
+
+    <script>
+        // Add the "loaded" class to the iframe when it's loaded and ready
+const iframe = document.querySelector('.animated-iframe');
+iframe.onload = () => {
+  iframe.classList.add('loaded');
+};
+
+    </script>
+
+</body>
+
+</html>

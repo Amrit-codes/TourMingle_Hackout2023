@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre&family=Glegoo&family=Philosopher&family=Roboto&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style_except.css">
+    <link rel="stylesheet" href="login1.css">
+    <link rel="icon" href="icons/FINAL.png">
+
+
+
+  <title>LoginTourMingle</title>
+</head>
+<body>
+    <div class="stripes">
+        <div class="line-one"></div>
+        <div class="line-two"></div>
+    </div>
+    <nav>
+        <div class="logo">
+            <span>TourMingle</span>
+        </div>
+        <ul>
+            <li><a href="./index.html">Main</a></li>
+            <li><a href="./aboutpage.html">About Us</a></li>
+            <li><a href="./contactpage1.html">Contact us</a></li>
+            <li><a href="./disclaimer.html">Chatbot</a></li>
+            <li><a href="./login1.html">Login</a></li>
+        </ul>
+
+    </nav>
+
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline" id="line"></ion-icon>
+                        <input type="email" required id="line">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline" id="line"></ion-icon>
+                        <input type="password" required id="line">
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me  <a href="#">Forget Password</a></label>
+                      
+                    </div>
+                    <button><a href="chatbot.html">Log in</a></button>
+                    <div class="register">
+                        <p>Don't have a account? <a href="#">Register Here!</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        TweenMax.from(".line-one", 1, {
+            opacity: 0,
+            delay: .1,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".line-two", 1, {
+            opacity: 0,
+            delay: 0.5,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+        
+    </script>
+</body>
+</html>
